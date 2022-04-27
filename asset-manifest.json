@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/AplikacjaPogodowa/static/css/main.820a7211.css",
+    "main.css": "/AplikacjaPogodowa/static/css/main.0b9fab08.css",
     "main.js": "/AplikacjaPogodowa/static/js/main.dea32273.js",
     "index.html": "/AplikacjaPogodowa/index.html",
-    "main.820a7211.css.map": "/AplikacjaPogodowa/static/css/main.820a7211.css.map",
+    "main.0b9fab08.css.map": "/AplikacjaPogodowa/static/css/main.0b9fab08.css.map",
     "main.dea32273.js.map": "/AplikacjaPogodowa/static/js/main.dea32273.js.map"
   },
   "entrypoints": [
-    "static/css/main.820a7211.css",
+    "static/css/main.0b9fab08.css",
     "static/js/main.dea32273.js"
   ]
 }
