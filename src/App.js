@@ -19,26 +19,27 @@ function App() {
   };
 
   return (
-   
-      <div className=" app">
-        <div className="container">
-          <div className="search">
-            <input
-              className="search-box"
-              value={location}
-              onChange={(event) => setLocation(event.target.value)}
-              placeholder="Wpisz miasto..."
-              onKeyPress={searchLocation}
-              type="text"
-            />
-          </div>
+    <div className=" app">
+      <div className="container">
+        <div className="search">
+          <input
+            className="search-box"
+            value={location}
+            onChange={(event) => setLocation(event.target.value)}
+            placeholder="Wpisz miasto..."
+            onKeyPress={searchLocation}
+            type="text"
+          />
+        </div>
 
-          {data.name != undefined && (
-
+        {data.name != undefined && (
           <div className="top">
             <div className="location">
-             
               <h1>{location}</h1>
+              <img
+                className="weather--icon"
+                src={`http://openweathermap.org/img/w/${data.weather[0].icon}.png`}
+              />
             </div>
             <div className="weather-box1">
               <div className="temp">
@@ -49,26 +50,23 @@ function App() {
               </div>
             </div>
           </div>
-          )}
-          {data.name != undefined && (
-            <div className="bottom">
-              <div className="humidity">
-                <p>
-                  {data.clouds ? (
-                    <p>Zachmurzenie: {data.clouds.all} %</p>
-                  ) : null}
-                </p>
-              </div>
-              <div className="wind">
-                {data.wind ? (
-                  <p>Prędkość wiatru: {data.wind.speed.toFixed()} m/s</p>
-                ) : null}
-              </div>
+        )}
+        {data.name != undefined && (
+          <div className="bottom">
+            <div className="humidity">
+              <p>
+                {data.clouds ? <p>Zachmurzenie: {data.clouds.all} %</p> : null}
+              </p>
             </div>
-          )}
-        </div>
+            <div className="wind">
+              {data.wind ? (
+                <p>Prędkość wiatru: {data.wind.speed.toFixed()} m/s</p>
+              ) : null}
+            </div>
+          </div>
+        )}
       </div>
-    
+    </div>
   );
 }
 export default App;

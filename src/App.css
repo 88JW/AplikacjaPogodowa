@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Audiowide", sans-serif;
   font-size: 1rem;
   text-align: center;
   display: flex;
@@ -31,7 +31,7 @@ body {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .search {
@@ -77,16 +77,20 @@ h1 {
 }
 
 .temp {
-    font-size: 4rem;
+  font-size: 4rem;
   font-weight: 700;
 }
 
 .description {
- 
   font-size: 20px;
   text-transform: uppercase;
   margin-bottom: 20px;
   margin-top: 20px;
+}
+
+.weather--icon {
+  width: 30%;
+  height: 30%;
 }
 
 .bottom {
